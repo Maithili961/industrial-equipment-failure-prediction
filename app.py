@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 
-model = joblib.load("model/trained_model.pkl")
+model = joblib.load("trained_model.pkl")
 
 @app.route("/", methods=["GET", "POST"])
 def home():
